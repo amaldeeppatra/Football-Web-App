@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Card from './components/Card'
 
 function App() {
 
@@ -12,8 +11,10 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
-      <h2 className='text-white p-10 text-[2.3rem] font-poppins font-semibold'>Top News</h2>
-      <Card/>
+      <h2 className='text-white px-20 py-10 text-[2.3rem] font-poppins font-semibold'>Top News</h2>
+      <div className='flex justify-between px-10'>
+      </div>
+      <p className='text-white'>snjdfnjolsdngjol</p>
     </>
   )
 }
