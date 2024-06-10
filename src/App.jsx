@@ -13,7 +13,14 @@ function App() {
       <Navbar/>
       <Hero/>
       <h2 className='text-white p-10 text-[2.3rem] font-poppins font-semibold'>Top News</h2>
-      <Card/>
+      <div className='flex '>
+        <Card/>
+        <Card/>
+        <Card/>
+      </div>
+      <div className='h-10 bg-black'>
+
+      </div>
     </>
   )
 }
