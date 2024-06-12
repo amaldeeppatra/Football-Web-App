@@ -1,0 +1,70 @@
+{
+    "body":[
+        {
+            "rank": "",
+            "img": "",
+            "club": "Man City",
+            "mp": "38",
+            "wins": "28",
+            "draw": "7",
+            "losses": "3",
+            "gf": "96",
+            "ga": "34",
+            "gd": "64",
+            "pts": "91",
+            "streak": "W W W W W"
+        },
+        {
+            "rank": "",
+            "club": "Arsenal",
+            "mp": "38",
+            "wins": "25",
+            "draw": "7",
+            "losses": "3",
+            "gf": "96",
+            "ga": "34",
+            "gd": "64",
+            "pts": "89",
+            "streak": "W W W W W"
+        },
+        {
+            "rank": "",
+            "club": "Liverpool",
+            "mp": "38",
+            "wins": "28",
+            "draw": "7",
+            "losses": "3",
+            "gf": "96",
+            "ga": "34",
+            "gd": "64",
+            "pts": "85",
+            "streak": "W W W W W"
+        },
+        {
+            "rank": "",
+            "club": "Aston Villa",
+            "mp": "38",
+            "wins": "28",
+            "draw": "7",
+            "losses": "3",
+            "gf": "96",
+            "ga": "34",
+            "gd": "69",
+            "pts": "80",
+            "streak": "W W W W W"
+        },
+        {
+            "rank": "",
+            "club": "Chelsea",
+            "mp": "38",
+            "wins": "28",
+            "draw": "7",
+            "losses": "3",
+            "gf": "96",
+            "ga": "34",
+            "gd": "64",
+            "pts": "77",
+            "streak": "W W W W W"
+        }
+    ]
+}

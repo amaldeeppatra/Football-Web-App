@@ -7,7 +7,7 @@ const News = () => {
     <>
       <div className='bg-black-400'>
        <div className='text-white bg-slate-900 ml-11 mr-11'>
-        <div className='text-white bg-gray-800 '>
+        <div className='text-white bg-gray-800'>
         <div className='flex mt-20 font-bold text-5xl p-10'>
           TRENDING NEWS
         </div>
@@ -16,34 +16,31 @@ const News = () => {
           <div className='mt-32 text-3xl text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptate nihil omnis minima id pariatur. </div>
         </div>
         </div>
-        <div className=' mt-10 flex'>
+        <div className=' mt-10 flex justify-around'>
            <Cardnews/>
            <Cardnews/>
            <Cardnews/>
            <Cardnews/>
         </div>
-        <div className=' mt-10 flex'>
+        <div className=' mt-10 flex justify-around'>
            <Cardnews/>
            <Cardnews/>
            <Cardnews/>
            <Cardnews/>
         </div>
-        <div className=' mt-10 flex'>
+        <div className=' mt-10 flex justify-around'>
            <Cardnews/>
            <Cardnews/>
            <Cardnews/>
            <Cardnews/>
         </div>
-        <div className=' mt-10 flex'>
+        <div className=' mt-10 flex justify-around pb-20 mb-16'>
            <Cardnews/>
            <Cardnews/>
            <Cardnews/>
            <Cardnews/>
         </div>
        </div>
-      </div>
-      <div className='mt-10'>
-        <Footer/>
       </div>
     </>
   )

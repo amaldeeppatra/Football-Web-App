@@ -39,7 +39,7 @@ const appRouter=createBrowserRouter(
               },
               {
                 path:"/news",
-                element:[<Navbar/>,<News/>]
+                element:[<Navbar/>,<News/>,<Footer/>]
               },
               {
                 path:"/competitions",

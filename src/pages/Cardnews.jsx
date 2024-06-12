@@ -3,10 +3,10 @@ import ronaldo from '../resources/ronaldo.jpg'
 
 const Cardnews = () => {
   return (
-    <div className='mt-10 mr-11 bg-gray-600 w-80 rounded-[20px] py-3'>
-      <img className='mt-2 ml-4 h-72 w-72 opacity-70 z-10 rounded-[30px]' src={ronaldo} alt="" />
-      <div className='ml-4 w-72'>
-        <h2 className='text-white text-lg font-semibold z-20 text-justify'>Lorem ipsum dolor sit amet consectetur adipisic</h2>
+    <div className='mt-7 bg-gray-600 p-[1.1rem] rounded-[20px] flex flex-col items-center font-poppins'>
+      <img className='h-64 rounded-[35px] ' src={ronaldo} alt="" />
+      <div className='w-48'>
+        <h2 className='text-white text-[1.1rem] font-semibold text-justify'>Cristiano Ronaldo main player for portugal.</h2>
       </div>
     </div>
   )
