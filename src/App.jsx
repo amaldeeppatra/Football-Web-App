@@ -11,6 +11,9 @@ import Card3 from './components/Card3'
 import Footer from './components/Footer'
 import { createBrowserRouter,Outlet,RouterProvider } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
+import News from './pages/News'
+import Competitions from './pages/Competitions'
+import Epl from './competitions/Epl'
 
 
 const App=()=>{
@@ -36,11 +39,15 @@ const appRouter=createBrowserRouter(
               },
               {
                 path:"/news",
-                element:[<Navbar/>]
+                element:[<Navbar/>,<News/>]
               },
               {
                 path:"/competitions",
-                element:[<Navbar/>,<Footer/>]
+                element:[<Navbar/>,<Competitions/>,<Footer/>]
+              },
+              {
+                path:"/competitions/epl",
+                element:[<Navbar/>,<Epl/>,<Footer/>]
               },
               {
                 path:"/about",
