@@ -16,7 +16,7 @@ const Competitions = () => {
             <h1 className='mb-3'>Leagues</h1>
             <div className='flex justify-between'>
                 <Link to="./epl"><img src={epl} alt="" /></Link>
-                <Link><img src={laliga} alt="" /></Link>
+                <Link to="./laliga"><img src={laliga} alt="" /></Link>
                 <Link><img src={bundesliga} alt="" /></Link>
                 <Link><img src={seriea} alt="" /></Link>
             </div>

@@ -14,6 +14,7 @@ import ReactDOM from 'react-dom/client'
 import News from './pages/News'
 import Competitions from './pages/Competitions'
 import Epl from './competitions/Epl'
+import Signup from './authentication/Signup'
 
 
 const App=()=>{
@@ -46,17 +47,21 @@ const appRouter=createBrowserRouter(
                 element:[<Navbar/>,<Competitions/>,<Footer/>]
               },
               {
-                path:"/competitions/epl",
-                element:[<Navbar/>,<Epl/>,<Footer/>]
-              },
-              {
                 path:"/about",
                 element:[<Navbar/>]
               },
               {
-                path:"/login",
-                element:[<Navbar/>]
-              }
+                path:"/signin",
+                element:[<Signup/>]
+              },
+              {
+                path:"/competitions/epl",
+                element:[<Navbar/>,<Epl/>,<Footer/>]
+              },
+              {
+                path:"/competitions/laliga",
+                element:[<Navbar/>,<Footer/>]
+              },
           ]
       }
   ]
