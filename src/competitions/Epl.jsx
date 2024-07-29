@@ -85,6 +85,8 @@ import Recentmatches from '../components/Recentmatches'
 import rightarrow from '../resources/rightarrow.svg'
 import Pointstabletr from '../components/Pointstabletr'
 import data from '../data/eplPointsTable.json'
+import Carousel from ReactElasticCarousel
+import ReactElasticCarousel from 'react-elastic-carousel'
 
 const Epl = () => {
   const [sortedData, setSortedData] = useState([]);
