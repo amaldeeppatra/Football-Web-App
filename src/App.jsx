@@ -14,6 +14,7 @@ import ReactDOM from 'react-dom/client'
 import News from './pages/News'
 import Competitions from './pages/Competitions'
 import Epl from './competitions/Epl'
+import Laliga from './competitions/Laliga'
 import Signup from './authentication/Signup'
 
 
@@ -59,8 +60,8 @@ const appRouter=createBrowserRouter(
                 element:[<Navbar/>,<Epl/>,<Footer/>]
               },
               {
-                path:"/competitions/laliga",
-                element:[<Navbar/>,<Footer/>]
+                path:"/competitions/Laliga",
+                element:[<Navbar/>,<Laliga/>,<Footer/>]
               },
           ]
       }
