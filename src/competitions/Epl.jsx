@@ -68,7 +68,9 @@
 //     </>
 //   )
 // }
-
+//<div className='flex'>//
+            //<img src={rightarrow} alt=""/>
+          //</div>//
 // export default Epl
 
 
@@ -85,9 +87,14 @@ import Recentmatches from '../components/Recentmatches'
 import rightarrow from '../resources/rightarrow.svg'
 import Pointstabletr from '../components/Pointstabletr'
 import data from '../data/eplPointsTable.json'
-import Carousel from ReactElasticCarousel
-import ReactElasticCarousel from 'react-elastic-carousel'
-
+import Carousel from 'react-elastic-carousel'
+import item from "./items"
+const breakPoints = [ 
+  {width:1,itemsToShow:1},
+  {width:500,itemsToShow:2},
+  {width:768,itemsToShow:3},
+  {width:1100,itemsToShow:4}
+]
 const Epl = () => {
   const [sortedData, setSortedData] = useState([]);
 
@@ -125,13 +132,18 @@ const Epl = () => {
         <h1 className='text-[2.3rem] font-bold'>Recent Matches</h1>
         
         <div className='flex gap-28 border border-white rounded-[15px] px-5'>
+          <Carousel breakPoints={breakPoints}>
           <Recentmatches/>
           <Recentmatches/>
           <Recentmatches/>
           <Recentmatches/>
-          <div className='flex'>
-            <img src={rightarrow} alt=""/>
-          </div>
+          <Recentmatches/>
+          <Recentmatches/>
+          <Recentmatches/>
+          <Recentmatches/>
+          <Recentmatches/>
+          <Recentmatches/>
+          </Carousel>
         </div>
       </div>
       <div className='text-white px-14 mt-16 mb-40 font-poppins'>
