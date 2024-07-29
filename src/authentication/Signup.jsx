@@ -22,7 +22,7 @@ const Signup = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    fetch('http://your-backend-url/login', {
+    fetch('http://localhost:5000/api/auth/signin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ const Signup = () => {
 
   const handleSignup = (e) => {
     e.preventDefault();
-    fetch('http://your-backend-url/signup', {
+    fetch('http://localhost:5000/api/auth/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
