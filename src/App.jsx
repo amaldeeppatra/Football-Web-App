@@ -71,23 +71,3 @@ const appRouter=createBrowserRouter(
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);
-
-
-// function App() {
-
-//   return (
-//     <>
-//       <Navbar/>
-//       <Hero/>
-//       <h2 className='text-white mt-5 px-20 py-10 text-[2.3rem] font-poppins font-semibold'>Top News</h2>
-//       {/* <div className='flex justify-between px-16 gap-10'> */}
-//         <Card/>
-//         {/* <Card2/> */}
-//         {/* <Card3/> */}
-//       {/* </div> */}
-//       <Footer/>
-//     </>
-//   )
-// }
-
-// export default App

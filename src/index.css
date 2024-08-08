@@ -5,3 +5,70 @@
 #root{
     background-color: #161616;
 }
+
+/* General styles for all nav links */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Specific hover styles for FieldFuse tab */
+  .fieldfuse-link:hover {
+    color: #4559A4;
+  }
+  
+  .fieldfuse-link:hover::before {
+    background-color: #4559A4;
+  }
+  
+  /* Specific hover styles for other tabs */
+  .other-link:hover {
+    color: #C73333;
+  }
+  
+  .other-link:hover::before {
+    background-color: #C73333;
+  }
+  
+  /* Hover underline effect for all links */
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+
+
+  
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2E2E2E;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4559A4;
+    border-radius: 10px;
+    border: 3px solid #2E2E2E;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #C73333;
+}
