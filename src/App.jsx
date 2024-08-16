@@ -37,7 +37,6 @@ const appRouter=createBrowserRouter(
               {
                 path:"/",
                 element:[<Navbar/>,<Hero/>,<Card/>,<Footer/>]
-                  
               },
               {
                 path:"/news",
