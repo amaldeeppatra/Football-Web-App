@@ -228,7 +228,6 @@
 import React, { useState, useEffect } from 'react'
 import laliga from '../resources/logos/laliga.svg'
 import Recentmatches from '../components/Recentmatches'
-import Carousel from 'react-elastic-carousel'
 import Pointstabletr from '../components/Pointstabletr'
 import pointsData from '../data/laligaPointsTable.json'
 import recentMatchesData from '../data/recentMatches.json'
@@ -285,17 +284,6 @@ const Laliga = () => {
       <div className='text-white flex items-center p-14 gap-10 font-poppins'>
         <img src={laliga} alt="Laliga Logo" className='w-[7rem]' />
         <h1 className='text-[3rem] font-bold'>Laliga</h1>
-      </div>
-      <div className='text-white px-14 font-poppins'>
-        <h1 className='text-[2.3rem] font-bold'>Recent Matches</h1>
-        
-        <div className='flex gap-28 border border-white rounded-[15px] px-5'>
-          <Carousel breakPoints={breakPoints}>
-            {recentMatches.map((match, index) => (
-              <Recentmatches key={index} match={match} />
-            ))}
-          </Carousel>
-        </div>
       </div>
       <div className='text-white px-14 mt-16 mb-40 font-poppins'>
         <h1 className='text-[2.3rem] font-bold mb-5'>Points Table</h1>

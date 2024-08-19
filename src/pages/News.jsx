@@ -43,7 +43,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import Cardnews from './Cardnews';
+import Cardnews from './Cardnews.jsx';
 import valverde from '../resources/valverde.jpg';
 
 const News = () => {

@@ -547,9 +547,15 @@
 import React, { useState, useEffect } from 'react';
 import epl from '../resources/logos/epl.svg';
 import Recentmatches from '../components/Recentmatches';
-import Carousel from 'react-elastic-carousel';
 import Pointstabletr from '../components/Pointstabletr';
 import recentMatchesData from '../data/recentMatches.json';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -562,7 +568,6 @@ const Epl = () => {
   const [sortedData, setSortedData] = useState([]);
   const [recentMatches, setRecentMatches] = useState([]);
   const [error, setError] = useState(null);
-
   useEffect(() => {
     const fetchPointsTable = async () => {
       try {
@@ -604,16 +609,25 @@ const Epl = () => {
         <img src={epl} alt="EPL Logo" className='w-[7rem]' />
         <h1 className='text-[3rem] font-bold'>Premier League</h1>
       </div>
-      <div className='text-white md:px-14 px-10 font-poppins'>
-        <h1 className='md:text-[2.3rem] text-[2rem] font-bold'>Recent Matches</h1>
-        
-        <div className='flex gap-28 border border-white rounded-[15px] md:px-5 px-3 overflow-x-auto'>
-          <Carousel breakPoints={breakPoints}>
-            {recentMatches.map((match, index) => (
-              <Recentmatches key={index} match={match} />
-            ))}
-          </Carousel>
-        </div>
+      <div className='text-white text-3xl px-14 mt-16 mb-40 font-poppins'>
+                     RECENT MATCHES
+      </div>
+      <div>
+      <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={3}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+      {recentMatches.map((match,index) => (
+              <SwiperSlide ><Recentmatches key={index} match={match} /> </SwiperSlide>
+           ))}
+    </Swiper>
       </div>
       <div className='text-white px-14 mt-16 mb-40 font-poppins'>
         <h1 className='text-[2.3rem] font-bold mb-5'>Points Table</h1>

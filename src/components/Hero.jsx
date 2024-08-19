@@ -13,7 +13,6 @@ const Hero = () => {
             </text>
         </svg>
       </div>
-
       <div>
         <img src={messi} alt="" className='absolute bigLaptop:left-64 -top-10 smallLaptop:left-[10rem]' />
       </div>
