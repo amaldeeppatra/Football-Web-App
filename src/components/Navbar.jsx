@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
       </div>
       {isMobileMenuOpen && (
-        <div className="md:hidden mt-4 space-y-2 space-x-12">
+        <div className="md:hidden mt-4 space-y-2 space-x-8">
           <Link to="/news" className="block nav-link other-link z-10" onClick={toggleMobileMenu}>News</Link>
           <Link to="/competitions" className="block nav-link other-link z-10" onClick={toggleMobileMenu}>Competitions</Link>
           <Link to="/about" className="block nav-link other-link z-10" onClick={toggleMobileMenu}>About Us</Link>
