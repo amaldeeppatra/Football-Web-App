@@ -50,7 +50,7 @@ const News = () => {
   const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/news')
+    fetch('https://fieldfuse-backend.onrender.com/api/news')
       .then(response => response.json())
       .then(data => setNewsData(data.slice(0, 16))) // Fetch and slice to get only the first 16 records
       .catch(error => console.error('Error fetching news data:', error));

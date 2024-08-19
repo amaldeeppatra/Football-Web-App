@@ -571,7 +571,7 @@ const Epl = () => {
   useEffect(() => {
     const fetchPointsTable = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/epl');
+        const response = await fetch('https://fieldfuse-backend.onrender.com/api/epl');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
