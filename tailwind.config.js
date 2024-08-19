@@ -11,7 +11,8 @@ export default {
       },
       screens: {
         "smallLaptop": "1024px",
-        "bigLaptop": "1280px"
+        "bigLaptop": "1280px",
+        "phone": "390px"
       }
     },
   },

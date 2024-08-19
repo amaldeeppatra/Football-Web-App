@@ -609,25 +609,25 @@ const Epl = () => {
         <img src={epl} alt="EPL Logo" className='w-[7rem]' />
         <h1 className='text-[3rem] font-bold'>Premier League</h1>
       </div>
-      <div className='text-white text-3xl px-14 mt-16 mb-40 font-poppins'>
+      <div className='text-white text-3xl px-14 mt-16 mb-5 font-poppins'>
                      RECENT MATCHES
       </div>
-      <div>
-      <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
-    >
-      {recentMatches.map((match,index) => (
-              <SwiperSlide ><Recentmatches key={index} match={match} /> </SwiperSlide>
-           ))}
-    </Swiper>
+      <div className='text-white px-10'>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          // spaceBetween={50}
+          slidesPerView={4}
+          navigation
+          // pagination={{ clickable: true }}
+          // scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
+        >
+          {recentMatches.map((match,index) => (
+                  <SwiperSlide ><Recentmatches key={index} match={match} /> </SwiperSlide>
+              ))}
+        </Swiper>
       </div>
       <div className='text-white px-14 mt-16 mb-40 font-poppins'>
         <h1 className='text-[2.3rem] font-bold mb-5'>Points Table</h1>
