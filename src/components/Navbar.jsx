@@ -34,7 +34,7 @@ const Navbar = () => {
     <nav className="bg-gradient-to-b from-[#2E2E2E] to-[#2A2A2A] p-6 text-white font-poppins text-xl">
       <div className="flex justify-between items-center">
         <div>
-          <Link to="/" className="nav-link fieldfuse-link">FieldFuse</Link>
+          <Link to="/" className="nav-link fieldfuse-link">FieldFuse.</Link>
         </div>
         <div className="hidden md:flex gap-16 z-10">
           <Link to="/news" className="nav-link other-link">News</Link>
