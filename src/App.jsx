@@ -10,6 +10,7 @@ import Competitions from './pages/Competitions'
 import Epl from './competitions/Epl'
 import Laliga from './competitions/Laliga'
 import Signup from './authentication/Signup'
+import NewsPage from './pages/NewsPage'
 
 
 const App=()=>{
@@ -35,6 +36,10 @@ const appRouter=createBrowserRouter(
               {
                 path:"/news",
                 element:[<Navbar/>,<News/>,<Footer/>]
+              },
+              {
+                path: "/news/:title",
+                element: [<Navbar/>,<NewsPage/>,<Footer/>], // Route to NewsPage with dynamic URL
               },
               {
                 path:"/competitions",
