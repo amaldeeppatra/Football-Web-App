@@ -45,7 +45,7 @@ const Epl = () => {
 
     const fetchRecentMatches = async () => {
       try {
-        const response = await fetch('https://fieldfuse-backend.onrender.com/api/recent-matches');
+        const response = await fetch('https://fieldfuse-backend.onrender.com/api/epl/recent-matches');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
