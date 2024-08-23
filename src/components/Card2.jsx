@@ -1,5 +1,4 @@
 import React from 'react'
-import ronaldo from '../resources/ronaldo.jpg'
 import { Link } from 'react-router-dom'
 
 const Card = () => {

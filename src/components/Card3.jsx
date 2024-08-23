@@ -1,5 +1,4 @@
 import React from 'react'
-import kimmich from '../resources/kimmich.jpg'
 import { Link } from 'react-router-dom'
 
 const Card = () => {
