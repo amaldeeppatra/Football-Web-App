@@ -84,7 +84,7 @@ const News = () => {
             <div className='flex-1'>TRENDING NEWS</div>
           </div>
           <div className='flex flex-col sm:flex-row items-center sm:items-start'>
-            <img className='opacity-70 z-10 rounded-[30px] w-full sm:w-[650px] p-4 sm:p-8' src={valverde} alt="Trending" />
+            <img className='opacity-70 z-10 rounded-[30px] w-full sm:w-[650px] p-4 sm:p-8' src="https://res.cloudinary.com/dxj6xhcpe/image/upload/v1724408851/valverde_k3djwc.jpg" alt="Trending" />
             <div className='mt-6 sm:mt-32 text-xl sm:text-3xl text-center sm:text-left px-4 sm:px-0'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptate nihil omnis minima id pariatur.
             </div>
