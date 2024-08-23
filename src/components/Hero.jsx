@@ -3,6 +3,10 @@ import messi from '../resources/messi-smallwidth.svg'
 import predictButton from '../resources/predict-button.svg'
 
 const Hero = () => {
+  const predictNow = () => {
+    window.location.href = './predict-now'
+  }
+  
   return (
     <>
     <div className='bg-gradient-to-b from-[#2A2A2A] to-black  bigLaptop:h-[100vh] smallLaptop:h-[100vh] phone:h-[50vh] flex bigLaptop:flex-row smallLaptop:flex-row'>
@@ -23,7 +27,7 @@ const Hero = () => {
             TEAM POINTS
         </text>
         </svg>
-        <button className='absolute bigLaptop:right-52 bigLaptop:top-[30.5rem] smallLaptop:right-[9rem] smallLaptop:top-[32rem] bigLaptop:size-48 smallLaptop:size-36 phone:size-20 phone:top-[25rem] bigLaptop:ml-0 smallLaptop:nl-0 phone:ml-5'><img src={predictButton} alt="" /></button>
+        <button className='absolute bigLaptop:right-52 bigLaptop:top-[30.5rem] smallLaptop:right-[9rem] smallLaptop:top-[32rem] bigLaptop:size-48 smallLaptop:size-36 phone:size-20 phone:top-[25rem] bigLaptop:ml-0 smallLaptop:nl-0 phone:ml-5' onClick={predictNow}><img src={predictButton} alt="" /></button>
       </div>
     </div>
     </>

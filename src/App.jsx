@@ -11,6 +11,7 @@ import Epl from './competitions/Epl'
 import Laliga from './competitions/Laliga'
 import Signup from './authentication/Signup'
 import NewsPage from './pages/NewsPage'
+import PredictNow from './pages/PredictNow'
 
 
 const App=()=>{
@@ -61,6 +62,10 @@ const appRouter=createBrowserRouter(
                 path:"/competitions/Laliga",
                 element:[<Navbar/>,<Laliga/>,<Footer/>]
               },
+              {
+                path:"/predict-now",
+                element:[<Navbar/>,<PredictNow/>,<Footer/>]
+              }
           ]
       }
   ]
